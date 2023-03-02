@@ -35,7 +35,7 @@ const Card = (props) => {
 }
 const OtherElectionResults = () => {
     return <><br></br><br></br>
-        <section className="w-full h-full grid grid-cols-2 gap-20">
+        <section className="w-full h-full grid grid-cols-2 gap-16">
             <Section title="senate" />
             <Section title="house" />
         </section>

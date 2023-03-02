@@ -8,7 +8,7 @@ import Stateresults from './components/state-results';
 
 function App() {
   return (
-    <section className='w-full h-full p-12 flex flex-col space-y-4 bg-gray-900'>
+    <section className='w-full h-fit p-12 flex flex-col space-y-4 bg-gray-900'>
       {/* application app bar */}
       <AppBar />
       {/* election data section */}

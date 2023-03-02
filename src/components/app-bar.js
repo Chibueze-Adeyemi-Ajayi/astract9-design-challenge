@@ -1,7 +1,7 @@
 import logo from "../assets/img/logo.png";
 
 const AppBar = () => {
-    return <section className="w-full h-16 bg-inherit gap-3 grid grid-cols-9">
+    return <section className="w-full h-16 bg-inherit gap-2 grid grid-cols-9">
         <img className="w-42 h-8 col-span-2" src={logo} />
         <font className="text-gray-100 text-center text-sm uppercase font-semibold mt-1">About us</font>
         <font className="text-gray-100 text-center text-sm uppercase font-semibold mt-1">OUR communities</font>
