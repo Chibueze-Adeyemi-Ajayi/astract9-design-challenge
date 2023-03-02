@@ -1,24 +1,22 @@
 import "flowbite"
 
 const DropButton = (props) => {
-    let array = [];
-    props.children.forEach(child => {
-        array.push(
-            <li>
-            <a href="#" className="block border-b border-gray-800 px-4 py-2 hover:bg-gray-800 dark:hover:bg-gray-600 dark:hover:text-white">{child}</a>
-          </li>
-        )
+    let array = [], x  = -1; 
+    props.children.forEach(child => { x ++;
+        array.push( <li>
+            <a href="#" className={(x < props.children.length - 1 ? "border-b" : "") + " block border-gray-800 px-4 py-2 hover:bg-gray-800 dark:hover:bg-gray-600 dark:hover:text-white"}>{child}</a>
+          </li> )
     });
     return <div className="w-full h-full flex flex-row space-x-2">
-    <button id={props.id} data-dropdown-toggle={props.target_id} class="text-white w-full flex-row space-x-2 mx-auto font-light rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:hover:bg-blue-700" type="button"> 
-        <font className="w-full text-left text-gray-100">{props.title}</font>
-        <svg className="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-    </button>
-    <div id={props.target_id} className="z-10 border-x border-t border-gray-800 hidden bg-gray-900 divide-y divide-gray-100 rounded-lg shadow w-64 dark:bg-gray-700">
-        <ul className="py-2 text-sm text-gray-100 dark:text-gray-200" aria-labelledby={props.id}>
-            {array}
-        </ul>
-    </div>
+        <button id={props.id} data-dropdown-toggle={props.target_id} className="text-white w-full flex-row space-x-2 mx-auto font-light rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:hover:bg-blue-700" type="button"> 
+            <font className="w-full text-left text-gray-100">{props.title}</font>
+            <svg className="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div id={props.target_id} className="z-10 shadow-lg border border-gray-800 hidden bg-gray-900 divide-y divide-gray-100 rounded-lg shadow w-64 dark:bg-gray-700">
+            <ul className="text-sm text-gray-100 dark:text-gray-200" aria-labelledby={props.id}>
+                {array}
+            </ul>
+        </div>
     </div>
 }
 

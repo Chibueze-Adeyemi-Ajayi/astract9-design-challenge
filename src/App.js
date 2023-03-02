@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import AppBar from './components/app-bar';
 import ElectionData from './components/election-data';
+import PresidentialElection from './components/presidential-election';
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
       <AppBar />
       {/* election data section */}
       <ElectionData />
+      {/* presidential election section */}
+      <PresidentialElection />
     </section>
   );
 }
