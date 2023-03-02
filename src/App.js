@@ -4,6 +4,7 @@ import AppBar from './components/app-bar';
 import ElectionData from './components/election-data';
 import PresidentialElection from './components/presidential-election';
 import OtherElectionResults from './components/other-election-results';
+import Stateresults from './components/state-results';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
       <PresidentialElection />
       {/* other election results */}
       <OtherElectionResults />
+      {/* displaying the states results */}
+      <Stateresults />
     </section>
   );
 }
