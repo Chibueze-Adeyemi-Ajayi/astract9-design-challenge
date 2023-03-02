@@ -9,7 +9,7 @@ const Card = (props) => {
         </svg>
         <div className={"w-fit -mt-2 flex flex-row space-x-2 h-fit p-2 bg-white"}>
             <img src={props.img}></img>
-            <div className="w-full h-full flex flex-col space-y-1">
+            <div className="w-full font-medium h-full flex flex-col space-y-1">
                 <font className={"text-sm text-left " + props.color}>{props.name}</font>
                 <font className="text-sm text-left">{props.vote}</font>
             </div>
@@ -29,7 +29,7 @@ const PresidentialElection = () => {
         <div className="w-full h-fit -mt-2 grid grid-cols-3">
             <Card margin="ml-20" img={tinubu} color="text-cyan-300" vote="81,283,786 votes (51.3%)" name="Tinubu, APC" />
             <Card margin="ml-44" img={obi} color="text-green-500" vote="60,283,786 votes (42%)" name="Peter, LP" />
-            <Card margin="ml-48" img={atiku} color="text-cyan-300" vote="283,786 votes (7.3%)" name="Atiku, PDP" />
+            <Card margin="ml-48" img={atiku} color="text-red-600" vote="283,786 votes (7.3%)" name="Atiku, PDP" />
         </div>
     </section>
 }
