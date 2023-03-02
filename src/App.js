@@ -3,6 +3,7 @@ import './App.css';
 import AppBar from './components/app-bar';
 import ElectionData from './components/election-data';
 import PresidentialElection from './components/presidential-election';
+import OtherElectionResults from './components/other-election-results';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <ElectionData />
       {/* presidential election section */}
       <PresidentialElection />
+      {/* other election results */}
+      <OtherElectionResults />
     </section>
   );
 }
