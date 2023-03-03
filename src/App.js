@@ -23,10 +23,12 @@ function App() {
                 <PresidentialElection />
                 {/* other election results */}
                 <OtherElectionResults />
-                {/* displaying the map */}
-                <Map />
-                {/* Displaying map region */}
-                <MapRegion />
+                <div className='flex flex-col'>
+                  {/* displaying the map */}
+                  <Map />
+                  {/* Displaying map region */}
+                  <MapRegion />
+                </div>
                 {/* displaying the states results */}
                 <Stateresults />
         </section>

@@ -1,5 +1,5 @@
 const Map = () => {
-    return <section className="w-full h-full flex flex-col space-y-8"> <br></br><br></br>
+    return <section className="w-full h-fit flex flex-col space-y-8"> <br></br><br></br>
          <font className="capitalize text-white text-2xl font-semibold">presidential race</font>
          <div className="w-full flex h-full bg-black/20 rounded-md border border-white/20 p-12">
             <div id="map" className="w-[800px] justify-center pt-[75px] h-[800px] mx-auto my-auto"></div>
