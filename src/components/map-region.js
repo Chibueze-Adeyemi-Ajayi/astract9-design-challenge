@@ -45,8 +45,25 @@ const MapRegion = () => {
                 </div>
             </div>
             {/* candidate grouping by geo-political zone */}
-            <div className="w-full flex h-full bg-transparent border border-white/20 p-3 rounded-md">
+            <div className="w-full col-span-2 flex h-full bg-transparent border border-white/20 p-3 rounded-md">
 
+            </div>
+            {/* elected members */}
+            <div className="w-full flex h-full bg-transparent border border-white/20 p-3 rounded-md">
+                <section className="w-full h-full flex px-3 py-6 flex-col space-y-8">
+                    <div className="w-full h-fit flex flex-col">
+                        <font className="uppercase text-gray-100 text-sm font-light w-full">total elected members</font>
+                        <font className="text-gray-100 font-medium text-xl">10,000</font>
+                    </div>
+                    <div className="w-full h-fit flex flex-col">
+                        <font className="uppercase text-gray-100 text-sm font-light w-full">male</font>
+                        <font className="text-gray-100 font-medium text-xl">9,000</font>
+                    </div>
+                    <div className="w-full h-fit flex flex-col">
+                        <font className="uppercase text-gray-100 text-sm font-light w-full">female</font>
+                        <font className="text-gray-100 font-medium text-xl">1,000</font>
+                    </div>
+                </section>
             </div>
         </div>
     </section>
