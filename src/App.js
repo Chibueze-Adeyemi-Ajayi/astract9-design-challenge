@@ -17,6 +17,7 @@ function App() {
         <section className='w-full h-full p-12 flex flex-col space-y-4'>
                 {/* application app bar */}
                 <AppBar />
+                <section className='h-10'></section>
                 {/* election data section */}
                 <ElectionData />
                 {/* presidential election section */}
