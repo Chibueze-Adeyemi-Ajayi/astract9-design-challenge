@@ -7,6 +7,8 @@ import OtherElectionResults from './components/other-election-results';
 import Stateresults from './components/state-results';
 import Footer from './components/footer';
 
+// 
+
 function App() {
   return (
     <div className='w-full h-fit flex flex-col bg-[#1E2748]'>
