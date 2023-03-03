@@ -6,6 +6,7 @@ import PresidentialElection from './components/presidential-election';
 import OtherElectionResults from './components/other-election-results';
 import Stateresults from './components/state-results';
 import Footer from './components/footer';
+import Map from './components/map';
 
 // this project is a frontend project from astract9 
 
@@ -22,6 +23,8 @@ function App() {
                 <PresidentialElection />
                 {/* other election results */}
                 <OtherElectionResults />
+                {/* displaying the map */}
+                <Map />
                 {/* displaying the states results */}
                 <Stateresults />
         </section>
