@@ -23,7 +23,7 @@ const PresidentialElection = () => {
         <h3 className="uppercase font-medium text-gray-100">president</h3><br></br>
         <div className="w-full h-fit flex flex-row">
             <div className="h-4 w-[51.3%] bg-cyan-300"></div>
-            <div className="h-4 w-[42%] bg-green-500"></div>
+            <div className="h-4 w-[42%] bg-[#0AA83F]"></div>
             <div className="h-4 w-[22.3%] bg-red-700"></div>
         </div>
         <div className="w-full h-fit -mt-2 grid grid-cols-3">
