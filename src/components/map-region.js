@@ -45,8 +45,16 @@ const MapRegion = () => {
                 </div>
             </div>
             {/* candidate grouping by geo-political zone */}
-            <div className="w-full col-span-2 flex h-full bg-transparent border border-white/20 p-3 rounded-md">
-
+            <div className="w-full col-span-2 flex p-6 h-full bg-transparent border border-white/20 rounded-md">
+                <div className="w-full h-full flex flex-col space-y-4">
+                    <font className="uppercase w-full text-gray-100 text-sm font-light">candidates by geopolitical zones</font>
+                    <div className="w-full h-full grid grid-cols-3">
+                        {/* small map */}
+                        <div className="w-full h-full col-span-2"></div>
+                        {/* legend */}
+                        <div className="w-full h-full"></div>
+                    </div>
+                </div>
             </div>
             {/* elected members */}
             <div className="w-full flex h-full bg-transparent border border-white/20 p-3 rounded-md">
