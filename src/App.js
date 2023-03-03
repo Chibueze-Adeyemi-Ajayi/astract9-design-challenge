@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import AppBar from './components/app-bar';
 import ElectionData from './components/election-data';
@@ -7,6 +6,7 @@ import OtherElectionResults from './components/other-election-results';
 import Stateresults from './components/state-results';
 import Footer from './components/footer';
 import Map from './components/map';
+import MapRegion from './components/map-region';
 
 // this project is a frontend project from astract9 
 
@@ -25,6 +25,8 @@ function App() {
                 <OtherElectionResults />
                 {/* displaying the map */}
                 <Map />
+                {/* Displaying map region */}
+                <MapRegion />
                 {/* displaying the states results */}
                 <Stateresults />
         </section>
