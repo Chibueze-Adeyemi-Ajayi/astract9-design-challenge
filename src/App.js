@@ -7,7 +7,7 @@ import OtherElectionResults from './components/other-election-results';
 import Stateresults from './components/state-results';
 import Footer from './components/footer';
 
-// this project is a front
+// this project is a fronte
 
 function App() {
   return (
