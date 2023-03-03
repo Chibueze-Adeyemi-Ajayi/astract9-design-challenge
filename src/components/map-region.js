@@ -50,9 +50,44 @@ const MapRegion = () => {
                     <font className="uppercase w-full text-gray-100 text-sm font-light">candidates by geopolitical zones</font>
                     <div className="w-full h-full grid grid-cols-3">
                         {/* small map */}
-                        <div className="w-full h-full col-span-2"></div>
+                        <div className="w-full flex h-full col-span-2">
+                            <section className="w-fit mx-auto h-full" id="map_2"></section>
+                        </div>
                         {/* legend */}
-                        <div className="w-full h-full"></div>
+                        <div className="w-full h-full">
+                            <section className="w-full h-fit my-auto flex flex-col space-y-4">
+                                <div className="w-full h-fit text-sm flex flex-row space-x-2">
+                                    <div className="w-[25px] mt-1 h-[15px] bg-[#449352]"></div>
+                                    <font className="capitalize text-gray-100">north east</font>&emsp;
+                                    <font className="text-gray-300 font-medium">&emsp;3,000</font>
+                                </div>
+                                <div className="w-full h-fit text-sm flex flex-row space-x-2">
+                                    <div className="w-[25px] mt-1 h-[15px] bg-[#6D769D]"></div>
+                                    <font className="capitalize text-gray-100">north west</font>&emsp;
+                                    <font className="text-gray-300 font-medium">&emsp;3,000</font>
+                                </div>
+                                <div className="w-full h-fit text-sm flex flex-row space-x-2">
+                                    <div className="w-[25px] mt-1 h-[15px] bg-[#A163BE]"></div>
+                                    <font className="capitalize text-gray-100">north central</font>&emsp;
+                                    <font className="text-gray-300 font-medium">3,000</font>
+                                </div>
+                                <div className="w-full h-fit text-sm flex flex-row space-x-2">
+                                    <div className="w-[25px] mt-1 h-[15px] bg-[#E30325]"></div>
+                                    <font className="capitalize text-gray-100">south west</font>&emsp;
+                                    <font className="text-gray-300 font-medium">&emsp;3,000</font>
+                                </div>
+                                <div className="w-full h-fit text-sm flex flex-row space-x-2">
+                                    <div className="w-[25px] mt-1 h-[15px] bg-[#2249D1]"></div>
+                                    <font className="capitalize text-gray-100">south south</font>&emsp;
+                                    <font className="text-gray-300 font-medium">&ensp;3,000</font>
+                                </div>
+                                <div className="w-full h-fit text-sm flex flex-row space-x-2">
+                                    <div className="w-[25px] mt-1 h-[15px] bg-[#018796]"></div>
+                                    <font className="capitalize text-gray-100">south east</font>&emsp;
+                                    <font className="text-gray-300 font-medium">&ensp;&nbsp;&ensp;3,000</font>
+                                </div>
+                            </section>
+                        </div>
                     </div>
                 </div>
             </div>
