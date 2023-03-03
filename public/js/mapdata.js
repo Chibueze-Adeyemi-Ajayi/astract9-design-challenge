@@ -1,10 +1,10 @@
 var simplemaps_countrymap_mapdata={
-  main_settings: {
+   main_settings: {
     //General settings
-		width: "300", //or 'responsive'
+		width: '800',
     background_color: "#FFFFFF",
     background_transparent: "yes",
-    border_color: "#ffffff",
+    border_color: "transparent",
     pop_ups: "detect",
     
 		//State defaults
@@ -12,7 +12,7 @@ var simplemaps_countrymap_mapdata={
     state_color: "#88A4BC",
     state_hover_color: "#3B729F",
     state_url: "",
-    border_size: 1.5,
+    border_size: .5,
     all_states_inactive: "no",
     all_states_zoomable: "yes",
     
@@ -24,7 +24,7 @@ var simplemaps_countrymap_mapdata={
     location_hover_opacity: 1,
     location_size: 25,
     location_type: "square",
-    location_image_source: "frog.png",
+    location_image_source: "map_images/frog.png",
     location_border_color: "#FFFFFF",
     location_border: 2,
     location_hover_border: 2.5,
@@ -53,7 +53,7 @@ var simplemaps_countrymap_mapdata={
     zoom_time: 0.5,
     
 		//Popup settings
-		popup_color: "white",
+		popup_color: "#fff",
     popup_opacity: 0.9,
     popup_shadow: 1,
     popup_corners: 5,
@@ -71,118 +71,300 @@ var simplemaps_countrymap_mapdata={
   state_specific: {
     NGA2839: {
       name: "Borno",
+      text: "Borno",
+      lebel: "Borno",
       description: "default",
-      color: "default",
-      hover_color: "default",
+      color: "#0AA83F",
+      hover_color: "#0AA83F",
       url: "default"
     },
     NGA2841: {
-      name: "Abia"
+      name: "Abia",
+      text: "Borno",
+      description: "default",
+      color: "#0AA83F",
+      hover_color: "#0AA83F",
+      url: "default"
     },
     NGA2842: {
-      name: "Akwa Ibom"
+      name: "Akwa Ibom",
+      text: "Borno",
+      description: "default",
+      color: "#0AA83F",
+      hover_color: "#0AA83F",
+      url: "default"
     },
     NGA2843: {
-      name: "Imo"
+      name: "Imo",
+      text: "Borno",
+      description: "default",
+      color: "#0AA83F",
+      hover_color: "#0AA83F",
+      url: "default"
     },
     NGA2844: {
-      name: "Rivers"
+      name: "Rivers",
+      text: "Borno",
+      description: "default",
+      color: "#0AA83F",
+      hover_color: "#0AA83F",
+      url: "default"
     },
     NGA2845: {
-      name: "Bayelsa"
+      name: "Bayelsa",
+      text: "Borno",
+      description: "default",
+      color: "#0AA83F",
+      hover_color: "#0AA83F",
+      url: "default"
     },
     NGA2846: {
-      name: "Benue"
+      name: "Benue",
+      text: "Borno",
+      description: "default",
+      color: "#0AA83F",
+      hover_color: "#0AA83F",
+      url: "default"
     },
     NGA2847: {
-      name: "Cross River"
+      name: "Cross River",
+      text: "Borno",
+      description: "default",
+      color: "#0AA83F",
+      hover_color: "#0AA83F",
+      url: "default"
     },
     NGA2848: {
-      name: "Taraba"
+      name: "Taraba",
+      text: "Borno",
+      description: "default",
+      color: "#D62B3C",
+      hover_color: "#D62B3C",
+      url: "default"
     },
     NGA2849: {
-      name: "Kwara"
+      name: "Kwara",
+      text: "Borno",
+      description: "default",
+      color: "#0AA83F",
+      hover_color: "#0AA83F",
+      url: "default"
     },
     NGA2850: {
-      name: "Lagos"
+      name: "Lagos",
+      text: "Borno",
+      description: "default",
+      color: "#64CCFF",
+      hover_color: "#64CCFF",
+      url: "default"
     },
     NGA2851: {
-      name: "Niger"
+      name: "Niger",
+      text: "Borno",
+      description: "default",
+      color: "#64CCFF",
+      hover_color: "#64CCFF",
+      url: "default"
     },
     NGA2852: {
-      name: "Ogun"
+      name: "Ogun",
+      text: "Borno",
+      description: "default",
+      color: "#64CCFF",
+      hover_color: "#64CCFF",
+      url: "default"
     },
     NGA2853: {
-      name: "Ondo"
+      name: "Ondo",
+      text: "Borno",
+      description: "default",
+      color: "#0AA83F",
+      hover_color: "#0AA83F",
+      url: "default"
     },
     NGA2854: {
-      name: "Ekiti"
+      name: "Ekiti",
+      text: "Borno",
+      description: "default",
+      color: "#0AA83F",
+      hover_color: "#0AA83F",
+      url: "default"
     },
     NGA2855: {
-      name: "Osun"
+      name: "Osun",
+      text: "Borno",
+      description: "default",
+      color: "#0AA83F",
+      hover_color: "#0AA83F",
+      url: "default"
     },
     NGA2856: {
-      name: "Oyo"
+      name: "Oyo",
+      text: "Borno",
+      description: "default",
+      color: "#0AA83F",
+      hover_color: "#0AA83F",
+      url: "default"
     },
     NGA2857: {
-      name: "Anambra"
+      name: "Anambra",
+      text: "Borno",
+      description: "default",
+      color: "#0AA83F",
+      hover_color: "#0AA83F",
+      url: "default"
     },
     NGA2858: {
-      name: "Bauchi"
+      name: "Bauchi",
+      text: "Borno",
+      description: "default",
+      color: "#64CCFF",
+      hover_color: "#64CCFF",
+      url: "default"
     },
     NGA2859: {
-      name: "Gombe"
+      name: "Gombe",
+      text: "Borno",
+      description: "default",
+      color: "#D62B3C",
+      hover_color: "#D62B3C",
+      url: "default"
     },
     NGA2860: {
-      name: "Delta"
+      name: "Delta",
+      text: "Borno",
+      description: "default",
+      color: "#0AA83F",
+      hover_color: "#0AA83F",
+      url: "default"
     },
     NGA2861: {
-      name: "Edo"
+      name: "Edo",
+      text: "Borno",
+      description: "default",
+      color: "#0AA83F",
+      hover_color: "#0AA83F",
+      url: "default"
     },
     NGA2862: {
-      name: "Enugu"
+      name: "Enugu",
+      text: "Borno",
+      description: "default",
+      color: "#0AA83F",
+      hover_color: "#0AA83F",
+      url: "default"
     },
     NGA2863: {
-      name: "Ebonyi"
+      name: "Ebonyi",
+      text: "Borno",
+      description: "default",
+      color: "#0AA83F",
+      hover_color: "#0AA83F",
+      url: "default"
     },
     NGA2864: {
-      name: "Kaduna"
+      name: "Kaduna",
+      text: "Borno",
+      description: "default",
+      color: "#64CCFF",
+      hover_color: "#64CCFF",
+      url: "default"
     },
     NGA2865: {
-      name: "Kogi"
+      name: "Kogi",
+      text: "Borno",
+      description: "default",
+      color: "#0AA83F",
+      hover_color: "#0AA83F",
+      url: "default"
     },
     NGA2866: {
-      name: "Plateau"
+      name: "Plateau",
+      text: "Borno",
+      description: "default",
+      color: "#0AA83F",
+      hover_color: "#0AA83F",
+      url: "default"
     },
     NGA2867: {
-      name: "Nassarawa"
+      name: "Nassarawa",
+      text: "Borno",
+      description: "default",
+      color: "#64CCFF",
+      hover_color: "#64CCFF",
+      url: "default"
     },
     NGA2868: {
-      name: "Jigawa"
+      name: "Jigawa",
+      text: "Borno",
+      description: "default",
+      color: "#ffffff",
+      hover_color: "#ffffff",
+      url: "default"
     },
     NGA2869: {
-      name: "Kano"
+      name: "Kano",
+      text: "Borno",
+      description: "default",
+      color: "#64CCFF",
+      hover_color: "#64CCFF",
+      url: "default"
     },
     NGA2870: {
-      name: "Katsina"
+      name: "Katsina",
+      text: "Borno",
+      description: "default",
+      color: "#64CCFF",
+      hover_color: "#64CCFF",
+      url: "default"
     },
     NGA2871: {
-      name: "Sokoto"
+      name: "Sokoto",
+      text: "Borno",
+      description: "default",
+      color: "#64CCFF",
+      hover_color: "#64CCFF",
+      url: "default"
     },
     NGA2872: {
-      name: "Zamfara"
+      name: "Zamfara",
+      text: "Borno",
+      description: "default",
+      color: "#64CCFF",
+      hover_color: "#64CCFF",
+      url: "default"
     },
     NGA2873: {
-      name: "Yobe"
+      name: "Yobe",
+      text: "Borno",
+      description: "default",
+      color: "#D62B3C",
+      hover_color: "#D62B3C",
+      url: "default"
     },
     NGA2879: {
-      name: "Kebbi"
+      name: "Kebbi",
+      text: "Borno",
+      description: "default",
+      color: "#64CCFF",
+      hover_color: "#64CCFF",
+      url: "default"
     },
     NGA2881: {
-      name: "Adamawa"
+      name: "Adamawa",
+      text: "Borno",
+      description: "default",
+      color: "#D62B3C",
+      hover_color: "#D62B3C",
+      url: "default"
     },
     NGA3470: {
-      name: "Federal Capital Territory"
+      name: "Federal Capital Territory",
+      text: "Borno",
+      description: "default",
+      color: "#64CCFF",
+      hover_color: "#64CCFF",
+      url: "default"
     }
   },
   locations: {
