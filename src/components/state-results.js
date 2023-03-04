@@ -21,20 +21,20 @@ const Stateresults = () => {
     }
     const states = [], states_2 = []; var i = 0;
     json_data.states.forEach(state => { i ++;
-        var elem = <tr class="border-b text-gray-100 border-collapse border border-blue-900">
-                        <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap capitalize border-collapse border border-blue-900">
+        var elem = <tr className="border-b text-gray-100 border-collapse border border-blue-900">
+                        <th scope="row" className="px-6 py-2 font-medium whitespace-nowrap capitalize border-collapse border border-blue-900">
                             {state}
                         </th>
-                        <td class="px-6 py-2 border-collapse border border-blue-900">
+                        <td className="px-6 py-2 border-collapse border border-blue-900">
                             {json_data.apc}
                         </td>
-                        <td class="px-6 py-2 border-collapse border border-blue-900">
+                        <td className="px-6 py-2 border-collapse border border-blue-900">
                             {json_data.lp}
                         </td>
-                        <td class="px-6 py-2 border-collapse border border-blue-900">
+                        <td className="px-6 py-2 border-collapse border border-blue-900">
                             {json_data.pdp}
                         </td>
-                        <td class={"px-6 py-2 border-collapse uppercase text-center border border-blue-900 " + getBgcolor(json_data.leading[i])}>
+                        <td className={"px-6 py-2 border-collapse uppercase text-center border border-blue-900 " + getBgcolor(json_data.leading[i])}>
                             {json_data.leading[i]}
                         </td>
                     </tr>;
@@ -50,23 +50,23 @@ const Stateresults = () => {
             </div>
             <section className="w-full h-full grid grid-cols-2 gap-20">
             
-                <div class="relative overflow-x-auto">
-                    <table class="w-full text-sm text-left text-gray-500">
-                        <thead class="text-xs text-gray-100 uppercase  border-collapse border border-blue-900">
+                <div className="relative overflow-x-auto">
+                    <table className="w-full text-sm text-left text-gray-500">
+                        <thead className="text-xs text-gray-100 uppercase  border-collapse border border-blue-900">
                             <tr>
-                                <th scope="col" class="px-6 py-3  border-collapse border border-blue-900">
+                                <th scope="col" className="px-6 py-3  border-collapse border border-blue-900">
                                     States
                                 </th>
-                                <th scope="col" class="px-6 py-3 border-collapse border border-blue-900">
+                                <th scope="col" className="px-6 py-3 border-collapse border border-blue-900">
                                     APC
                                 </th>
-                                <th scope="col" class="px-6 py-3 border-collapse border border-blue-900">
+                                <th scope="col" className="px-6 py-3 border-collapse border border-blue-900">
                                     LP
                                 </th>
-                                <th scope="col" class="px-6 py-3 border-collapse border border-blue-900">
+                                <th scope="col" className="px-6 py-3 border-collapse border border-blue-900">
                                     PDP
                                 </th>
-                                <th scope="col" class="px-6 py-3 border-collapse border border-blue-900">
+                                <th scope="col" className="px-6 py-3 border-collapse border border-blue-900">
                                     Leading
                                 </th>
                             </tr>
@@ -77,23 +77,23 @@ const Stateresults = () => {
                     </table>
                 </div>
 
-                <div class="relative overflow-x-auto shadow-md">
-                    <table class="w-full text-sm text-left text-gray-500">
-                        <thead class="text-xs text-gray-100 uppercase  border-collapse border border-blue-900">
+                <div className="relative overflow-x-auto shadow-md">
+                    <table className="w-full text-sm text-left text-gray-500">
+                        <thead className="text-xs text-gray-100 uppercase  border-collapse border border-blue-900">
                             <tr>
-                                <th scope="col" class="px-6 py-3  border-collapse border border-blue-900">
+                                <th scope="col" className="px-6 py-3  border-collapse border border-blue-900">
                                     States
                                 </th>
-                                <th scope="col" class="px-6 py-3 border-collapse border border-blue-900">
+                                <th scope="col" className="px-6 py-3 border-collapse border border-blue-900">
                                     APC
                                 </th>
-                                <th scope="col" class="px-6 py-3 border-collapse border border-blue-900">
+                                <th scope="col" className="px-6 py-3 border-collapse border border-blue-900">
                                     LP
                                 </th>
-                                <th scope="col" class="px-6 py-3 border-collapse border border-blue-900">
+                                <th scope="col" className="px-6 py-3 border-collapse border border-blue-900">
                                     PDP
                                 </th>
-                                <th scope="col" class="px-6 py-3 border-collapse border border-blue-900">
+                                <th scope="col" className="px-6 py-3 border-collapse border border-blue-900">
                                     Leading
                                 </th>
                             </tr>
