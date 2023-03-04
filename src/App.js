@@ -21,17 +21,17 @@ function App() {
                 {/* election data section */}
                 <ElectionData />
                 {/* presidential election section */}
-                <PresidentialElection />
+                <div className='hidden' id='presidential'><PresidentialElection /></div>
                 {/* other election results */}
-                <OtherElectionResults />
+                <div className='hidden' id='senate-house'><OtherElectionResults /></div>
                 <div className='flex flex-col'>
                   {/* displaying the map */}
                   <Map />
                   {/* Displaying map region */}
-                  <MapRegion />
+                  <div className='hidden' id='map-region'><MapRegion /></div>
                 </div>
                 {/* displaying the states results */}
-                <Stateresults />
+                <div className='hidden' id='mystate-id'><Stateresults /></div>
         </section>
         <Footer />
       </div>

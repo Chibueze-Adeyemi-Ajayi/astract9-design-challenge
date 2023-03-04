@@ -1,9 +1,22 @@
 import "flowbite"
+import $ from "jquery";
 
 const DropButton = (props) => {
     let array = [], x  = -1; 
     props.children.forEach(child => { x ++;
-        array.push( <li>
+        array.push( <li onClick={() => {
+            var presidential = $("#presidential"), senate = $("#senate-house"),
+                region = $("#map-region"), state__ = ("#mystate-id");
+            if (props.target_id == "btn-1") {
+                if (child == "Pre-Election") {//alert
+                    presidential.fadeOut(); senate.fadeOut(); region.fadeOut(); state__.fadeOut();
+                } else if (child == "Election Day Live Update") {
+                    presidential.fadeIn(); senate.fadeIn(); region.fadeOut(); state__.fadeIn();
+                } else {
+                    presidential.fadeOut(); senate.fadeOut(); region.fadeIn(); state__.fadeOut();
+                }
+            }
+        }}>
             <a href="#" className={(x < props.children.length - 1 ? "border-b" : "") + " block border-gray-800 px-4 py-2 hover:bg-gray-800 dark:hover:bg-gray-600 dark:hover:text-white"}>{child}</a>
           </li> )
     });
