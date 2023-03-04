@@ -6,15 +6,25 @@ const DropButton = (props) => {
     props.children.forEach(child => { x ++;
         array.push( <li onClick={() => {
             var presidential = $("#presidential"), senate = $("#senate-house"),
-                region = $("#map-region"), state__ = ("#mystate-id");
-            if (props.target_id == "btn-1") {
+                region = $("#map-region"), state__ = $("#state-results");
+            if (props.target_id == "btn-1") { $(`#${props.id}`).trigger("onclick")
                 if (child == "Pre-Election") {//alert
-                    presidential.fadeOut(); senate.fadeOut(); region.fadeOut(); state__.fadeOut();
+                    presidential.fadeOut(500); senate.fadeOut(500); region.fadeOut(500); state__.fadeOut(500);
+                    $('html, body').animate({
+                        scrollTop: $("#app").offset().top
+                    }, 500);
                 } else if (child == "Election Day Live Update") {
-                    presidential.fadeIn(); senate.fadeIn(); region.fadeOut(); state__.fadeIn();
+                    state__.fadeIn(700); presidential.fadeIn(700); senate.fadeIn(700); region.fadeOut(700);
+                    $('html, body').animate({
+                        scrollTop: presidential.offset().top
+                    }, 500); 
                 } else {
-                    presidential.fadeOut(); senate.fadeOut(); region.fadeIn(); state__.fadeOut();
+                    presidential.fadeOut(500); senate.fadeOut(700);region.fadeIn(1500); state__.fadeOut(1200);
+                    $('html, body').animate({
+                        scrollTop: region.offset().top
+                    }, 1000);
                 }
+                $(`#${props.target_id}`).show();
             }
         }}>
             <a href="#" className={(x < props.children.length - 1 ? "border-b" : "") + " block border-gray-800 px-4 py-2 hover:bg-gray-800 dark:hover:bg-gray-600 dark:hover:text-white"}>{child}</a>

@@ -12,7 +12,7 @@ import MapRegion from './components/map-region';
 
 function App() {
   return (
-    <div className='w-full h-fit flex flex-col bg-[#1E2748]'>
+    <div id='app' className='w-full h-fit flex flex-col bg-[#1E2748]'>
       <div className='w-full flex flex-col h-full bg-black/30'>
         <section className='w-full h-full p-12 flex flex-col space-y-4'>
                 {/* application app bar */}
@@ -31,7 +31,8 @@ function App() {
                   <div className='hidden' id='map-region'><MapRegion /></div>
                 </div>
                 {/* displaying the states results */}
-                <div className='hidden' id='mystate-id'><Stateresults /></div>
+                <div className='hidden' id='state-results'><Stateresults /></div>
+                
         </section>
         <Footer />
       </div>

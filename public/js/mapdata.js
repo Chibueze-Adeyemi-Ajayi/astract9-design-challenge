@@ -367,11 +367,4 @@ var simplemaps_countrymap_mapdata={
       url: "default"
     }
   },
-  locations: {
-    "0": {
-      lat: "9.083333",
-      lng: "7.533333",
-      name: "Abuja"
-    }
-  }
 };
