@@ -1,3 +1,3 @@
 /*
-* This code snippet enables http communication with back
+* This code snippet enables http communication with backe
 */
