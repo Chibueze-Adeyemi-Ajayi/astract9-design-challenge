@@ -1,3 +1,3 @@
 /*
-* This code snippet enables ht
+* This code snippet enables htt
 */
