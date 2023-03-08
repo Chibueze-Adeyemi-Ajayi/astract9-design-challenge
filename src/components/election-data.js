@@ -1,5 +1,5 @@
 import "flowbite"
-import $ from "jquery";
+import $, { isArray } from "jquery";
 import FetchHTTPData from "../assets/js/http-connector";
 import atiku from "../assets/img/atiku.png";
 import obi from "../assets/img/obi.png";
@@ -17,11 +17,27 @@ function getPercentage (vote, total_vote) {
     return `(${Math.round(percentage)}%)`;
 }
 
-function fetchPresidentialData () {
+function fetchSenateElectionData () {
+    FetchHTTPData("senate", (response) => {
+
+    });
+}
+
+function fetchPresidentialData () {  $("#presidential-loader-error-message").fadeOut();
     var senate = $("#senate-house"), region = $("#map-region"), state__ = $("#state-results"), presidential = $("#presidential");
-    FetchHTTPData("president", (response) => { 
+    FetchHTTPData("president", (response) => { $("#presidential-loader").fadeOut(250);
+        if (isArray(response)) {
+            if (response.length <= 0) {
+                presidential.fadeOut(500); senate.fadeOut(500); region.fadeOut(500); state__.fadeOut(500);
+                $("#presidential-loader-error-message").fadeIn();
+                return;
+            }
+        } else {
+            presidential.fadeOut(500); senate.fadeOut(500); region.fadeOut(500); state__.fadeOut(500);
+            $("#presidential-loader-error-message").fadeIn();
+            return;
+        }
         state__.fadeIn(700); presidential.fadeIn(700); senate.fadeIn(700); region.fadeOut(700);
-        $("#presidential-loader").fadeOut(250);
         // parsing the data
         var x = 0, total_votes = 0;
         response.forEach(result => { total_votes += result.candidates_vote; });
