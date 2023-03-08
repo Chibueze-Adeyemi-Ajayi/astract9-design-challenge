@@ -1,3 +1,3 @@
 /*
-* This code sni
+* This code snip0
 */
