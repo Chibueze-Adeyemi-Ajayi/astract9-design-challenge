@@ -1,3 +1,3 @@
 /*
-* This code snippet enabl
+* This code snippet enable
 */
