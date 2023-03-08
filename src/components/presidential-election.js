@@ -8,10 +8,10 @@ const Card = (props) => {
             <path className="fill-white" d="M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z"/>
         </svg>
         <div className={"w-fit -mt-2 flex flex-row space-x-2 h-fit p-2 bg-white"}>
-            <img src={props.img}></img>
+            <img id={`picx-${props.id}`} src={props.img}></img>
             <div className="w-full font-medium h-full flex flex-col space-y-1">
-                <font className={"text-sm text-left " + props.color}>{props.name}</font>
-                <font className="text-sm text-left">{props.vote}</font>
+                <font id={`name-${props.id}`} className={"text-sm text-left " + props.color}>{props.name}</font>
+                <font id={`vote-${props.id}`} className="text-sm text-left">{props.vote}</font>
             </div>
         </div>
     </section>
@@ -27,9 +27,9 @@ const PresidentialElection = () => {
             <div id="bar-3" className="h-4 w-[22.3%] bg-red-700"></div>
         </div>
         <div className="w-full h-fit -mt-2 grid grid-cols-3">
-            <Card margin="ml-20" img={tinubu} color="text-cyan-300" vote="81,283,786 votes (51.3%)" name="Tinubu, APC" />
-            <Card margin="ml-44" img={obi} color="text-green-500" vote="60,283,786 votes (42%)" name="Peter, LP" />
-            <Card margin="ml-48" img={atiku} color="text-red-600" vote="283,786 votes (7.3%)" name="Atiku, PDP" />
+            <Card margin="ml-20" id="1" img={tinubu} color="text-cyan-300" vote="81,283,786 votes (51.3%)" name="Tinubu, APC" />
+            <Card margin="ml-44" id="2" img={obi} color="text-green-500" vote="60,283,786 votes (42%)" name="Peter, LP" />
+            <Card margin="ml-48" id="3" img={atiku} color="text-red-600" vote="283,786 votes (7.3%)" name="Atiku, PDP" />
         </div>
     </section>
 }
