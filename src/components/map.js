@@ -12,7 +12,7 @@ var css = `<style>
       .btn_simplemaps:hover{text-decoration: underline;}
 </style>`;
 
-// This code secti
+// This code sectio
 function jsRender (block) { localStorage.setItem('state-result', JSON.stringify(block));
 console.log(JSON.parse(localStorage.getItem('state-result')));
     setTimeout(() => {
