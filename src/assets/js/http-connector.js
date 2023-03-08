@@ -7,7 +7,7 @@ import $ from "jquery";
   function FetchHTTPData (param, callback) {
 
     var settings = {
-        "url": `{{staging}}/elections/candidate-total-votes?type=${param}`,
+        "url": `https://elect-her.herokuapp.com/api/v1/elections/candidate-total-votes?type=${param}`,
         "method": "GET",
         "timeout": 0,
         "headers": {

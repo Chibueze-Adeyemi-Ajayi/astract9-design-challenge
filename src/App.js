@@ -12,7 +12,7 @@ import FetchHTTPData from './assets/js/http-connector';
 // this project is a frontend project from astract9 
 
 function App() {
-  FetchHTTPData("presidential", (response) => {
+  FetchHTTPData("president", (response) => {
     console.log(response);
   });
   return (
