@@ -7,10 +7,14 @@ import Stateresults from './components/state-results';
 import Footer from './components/footer';
 import Map from './components/map';
 import MapRegion from './components/map-region';
+import FetchHTTPData from './assets/js/http-connector';
 
 // this project is a frontend project from astract9 
 
 function App() {
+  FetchHTTPData("presidential", (response) => {
+    console.log(response);
+  });
   return (
     <div id='app' className='w-full h-fit flex flex-col bg-[#1E2748]'>
       <div className='w-full flex flex-col h-full bg-black/30'>

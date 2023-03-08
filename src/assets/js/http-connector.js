@@ -21,4 +21,4 @@ import $ from "jquery";
 
   }
 
-  module.exports = {FetchHTTPData}
+  export default FetchHTTPData;
