@@ -2,6 +2,8 @@
 * This code snippet enables http communication with backend 
 */
 
+import $ from "jquery";
+
 var settings = {
     "url": "{{staging}}/elections/candidate-total-votes?type=president",
     "method": "GET",
