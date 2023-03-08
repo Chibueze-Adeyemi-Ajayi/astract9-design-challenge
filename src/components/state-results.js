@@ -1,10 +1,12 @@
+import FetchHTTPData from "../assets/js/http-connector";
+
 const getBgcolor = (party) => {
     if (party == "apc") return "bg-cyan-300";
     else if (party == "lp") return "bg-[#0AA83F]";
     else return "bg-red-700";
 }
 
-const Stateresults = () => {
+const Stateresults = () => { 
 
     var json_data = {
         states: [

@@ -17,8 +17,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"  rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <script src="js/mapdata.js"></script>
-    <script src="js/countrymap.js"></script>
     <script src="js/select.js"></script>
     <script src="js/mapdata2.js"></script>
     <script src="js/countrymap2.js"></script>
@@ -94,13 +92,6 @@
           transform: scale(2.0);
         }
       }
-      .tt_sm{border-radius: 5px;box-shadow: 3px 3px 4px rgba(0,0,0,.5); z-index: 1000000;   background-color: #1E2748;   padding: 7px; opacity:0.9; font: 12px/1.5 Verdana, Arial, Helvetica, sans-serif; color: black;} 
-      .tt_name_sm{float: left; font-weight: bold} 
-      .xmark_sm{float: right; margin-left: 5px; cursor: pointer; line-height: 0px;}  
-      .tt_custom_sm{ background-color: transparent;} 
-      .tt_mobile_sm{margin-top: 5px;} 
-      .btn_simplemaps{color: black;text-decoration: none;background: #1E2748;display: inline-block;padding: 5px 5px;margin: 0; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; line-height: 1.43;text-align: center;white-space: nowrap;vertical-align: middle;-ms-touch-action: manipulation;touch-action: manipulation;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;border: 1px solid;border-radius: 4px;}   
-      .btn_simplemaps:hover{text-decoration: underline;}
     </style>
   </head>
   <body style="width:100%; height:100%">
@@ -114,7 +105,7 @@
         </section>
       </div>
     </div>
-    <div style="width:100%; height:100%" id="root"></div>
+    <div onvis="alert('astract9')" style="width:100%; height:100%" id="root"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -130,13 +121,21 @@
   <script>
     setTimeout(function() {
       $("#loader").fadeOut();
+      $("#abcd").html("APTYX")
     }, 3000)
   </script>
   <script>
     // JavaScript function for displaying state data     
    function aptyx () {
     $("#my-result-sheet").fadeIn();
-  }
-  x___ = 100000000000000000;
+   }
+  </script>
+  <script>
+  //   simplemaps_countrymap.hooks.click_state = function(id){
+  //    alert(simplemaps_countrymap.state_specific[id].name);
+  //  }
+  //  simplemaps_countrymap.hooks.ready = () => {
+  //   simplemaps_countrymap.load();
+  //  };
   </script>
 </html>

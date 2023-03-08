@@ -1,4 +1,4 @@
-var x___ = 0;
+
 var simplemaps_countrymap_mapdata={
    main_settings: {
     //General settings
@@ -101,16 +101,16 @@ var simplemaps_countrymap_mapdata={
     NGA2841: {
       name: "Abia",
       label: "Abia",
-      text: "Borno",
-      description: `<div class="w-[400px] h-fit bg-[#1E2748] rounded-md">
+      text: "Abia",
+      description: `<div class="w-[400px] text-white h-fit bg-[#1E2748] rounded-md">
       <div class='w-full h-full bg-black/50 rounded-md p-3 flex flex-col space-y-4'>
           <font class='uppercase text-sm text-gray-400 flex flex-row'>
               <font class='w-full'>vote count</font><font class='w-full pr-3 text-right text-[#E5B805] uppercase'>see full list</font>
           </font>
           <div class='w-full h-full gap-y-2 grid grid-cols-4'>
-              <font class='capitalize text-sm text-gray-100 col-span-2'>bola ahmed tinubu</font>
-              <font class='uppercase text-sm text-gray-100'>apc</font>
-              <font class='uppercase text-sm text-gray-100'>13,000,000</font>
+              <font id='name-1' class='capitalize text-sm text-gray-100 col-span-2'>bola ahmed tinubu</font>
+              <font id='party-1' class='uppercase text-sm text-gray-100'>apc</font>
+              <font id='vote-1' class='uppercase text-sm text-gray-100'>13,000,000</font>
 
               <font class='capitalize text-sm text-gray-100 col-span-2'>peter obi</font>
               <font class='uppercase text-sm text-gray-100'>lp</font>
@@ -128,15 +128,15 @@ var simplemaps_countrymap_mapdata={
     },
     NGA2842: {
       name: "Akwa Ibom",
-      text: "Borno",
-      description: `<div onShow="alert('hmmm')" class="w-[400px] h-fit bg-[#1E2748] rounded-md">
+      text: "Akwa Ibomn",
+      description: `<div id="aqua-div" class="w-[400px] h-fit bg-[#1E2748] rounded-md">
       <div class='w-full h-full bg-black/50 rounded-md p-3 flex flex-col space-y-4'>
           <font class='uppercase text-sm text-gray-400 flex flex-row'>
               <font class='w-full'>vote count</font><font class='w-full pr-3 text-right text-[#E5B805] uppercase'>see full list</font>
           </font>
           <div class='w-full h-full gap-y-2 grid grid-cols-4'>
               <font class='capitalize text-sm text-gray-100 col-span-2'>bola ahmed tinubu</font>
-              <font class='uppercase text-sm text-gray-100'>apc</font>
+              <font id='abcd' class='uppercase text-sm text-gray-100'>apc</font>
               <font class='uppercase text-sm text-gray-100'>13,000,000</font>
 
               <font class='capitalize text-sm text-gray-100 col-span-2'>peter obi</font>
@@ -144,7 +144,7 @@ var simplemaps_countrymap_mapdata={
               <font class='uppercase text-sm text-gray-100'>12, 083,991</font>
 
               <font class='capitalize text-sm text-gray-100 col-span-2'>atiku abubakar</font>
-              <font class='uppercase text-sm text-gray-100'>apc</font>
+              <font class='uppercase text-sm text-gray-100'>PDP</font>
               <font class='uppercase text-sm text-gray-100'>2, 083,991</font>
           </div>
       </div>
@@ -156,26 +156,7 @@ var simplemaps_countrymap_mapdata={
     NGA2843: {
       name: "Imo",
       text: "Borno",
-      description: `<div class="w-[400px] h-fit bg-[#1E2748] rounded-md">
-      <div class='w-full h-full bg-black/50 rounded-md p-3 flex flex-col space-y-4'>
-          <font class='uppercase text-sm text-gray-400 flex flex-row'>
-              <font class='w-full'>vote count</font><font class='w-full pr-3 text-right text-[#E5B805] uppercase'>see full list</font>
-          </font>
-          <div class='w-full h-full gap-y-2 grid grid-cols-4'>
-              <font class='capitalize text-sm text-gray-100 col-span-2'>bola ahmed tinubu</font>
-              <font class='uppercase text-sm text-gray-100'>apc</font>
-              <font class='uppercase text-sm text-gray-100'>13,000,000</font>
-
-              <font class='capitalize text-sm text-gray-100 col-span-2'>peter obi</font>
-              <font class='uppercase text-sm text-gray-100'>lp</font>
-              <font class='uppercase text-sm text-gray-100'>12, 083,991</font>
-
-              <font class='capitalize text-sm text-gray-100 col-span-2'>atiku abubakar</font>
-              <font class='uppercase text-sm text-gray-100'>apc</font>
-              <font class='uppercase text-sm text-gray-100'>2, 083,991</font>
-          </div>
-      </div>
-  </div>`,
+      description: ``,
       color: "#0AA83F",
       hover_color: "#0AA83F",
       url: "default"
@@ -191,14 +172,14 @@ var simplemaps_countrymap_mapdata={
           <div class='w-full h-full gap-y-2 grid grid-cols-4'>
               <font class='capitalize text-sm text-gray-100 col-span-2'>bola ahmed tinubu</font>
               <font class='uppercase text-sm text-gray-100'>apc</font>
-              <font class='uppercase text-sm text-gray-100'>${x___}</font>
+              <font class='uppercase text-sm text-gray-100'>2,083,911</font>
 
               <font class='capitalize text-sm text-gray-100 col-span-2'>peter obi</font>
               <font class='uppercase text-sm text-gray-100'>lp</font>
               <font class='uppercase text-sm text-gray-100'>12, 083,991</font>
 
               <font class='capitalize text-sm text-gray-100 col-span-2'>atiku abubakar</font>
-              <font class='uppercase text-sm text-gray-100'>apc</font>
+              <font class='uppercase text-sm text-gray-100'>PDP</font>
               <font class='uppercase text-sm text-gray-100'>2, 083,991</font>
           </div>
       </div>
