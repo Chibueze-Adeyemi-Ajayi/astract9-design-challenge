@@ -12,7 +12,7 @@ var css = `<style>
       .btn_simplemaps:hover{text-decoration: underline;}
 </style>`;
 
-// This code section embeds ra JavaScript
+// This code section embeds raw JavaScript
 function jsRender (block) { localStorage.setItem('state-result', JSON.stringify(block));
 console.log(JSON.parse(localStorage.getItem('state-result')));
     setTimeout(() => {
