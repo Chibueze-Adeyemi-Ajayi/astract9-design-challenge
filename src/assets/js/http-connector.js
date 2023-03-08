@@ -1,3 +1,3 @@
 /*
-* This code snippet enables http communication with baa
+* This code snippet enables http communication with ba
 */
