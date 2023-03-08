@@ -33,11 +33,34 @@ const Card = (props) => {
     </section>
     
 }
+
 const OtherElectionResults = () => {
     return <><br></br><br></br>
         <section className="w-full h-full grid grid-cols-2 gap-16">
-            <Section title="senate" />
-            <Section title="house" />
+            <div className="w-full h-full flex flex-col">
+                <div className="hidden" id="senate-result">
+                    <section className="w-full h-fit flex flex-col space-y-3">
+                        <h3 className="uppercase font-medium text-gray-100">senate</h3>
+                        <svg className='w-20 h-20 mx-auto my-auto' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                            <path className='fill-white' d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-110.3 0-200-89.7-200-200S137.7 56 248 56s200 89.7 200 200-89.7 200-200 200zm-80-280c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32zm160 0c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32z"/>
+                        </svg>
+                        <font className="text-center my-auto text-xl w-full h-fit text-white">No Result availble yet for this election</font>
+                    </section>
+                </div>
+                <div id="senate"><Section title="senate" /></div>
+            </div>
+            <div className="w-full h-full flex flex-col">
+                <div className="hidden" id="house-result">
+                    <section className="w-full h-fit flex flex-col space-y-3">
+                        <h3 className="uppercase font-medium text-gray-100">senate</h3>
+                        <svg className='w-20 h-20 mx-auto my-auto' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                            <path className='fill-white' d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-110.3 0-200-89.7-200-200S137.7 56 248 56s200 89.7 200 200-89.7 200-200 200zm-80-280c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32zm160 0c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32z"/>
+                        </svg>
+                        <font className="text-center my-auto text-xl w-full h-fit text-white">No Result availble yet for this election</font>
+                    </section>
+                </div>
+                <div id="house"><Section title="house" /></div>
+            </div>
         </section>
     </>
     

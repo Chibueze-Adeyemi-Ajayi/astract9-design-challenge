@@ -1,9 +1,14 @@
 import "flowbite"
 import $, { isArray } from "jquery";
 import FetchHTTPData from "../assets/js/http-connector";
+// Importing candidate images
 import atiku from "../assets/img/atiku.png";
 import obi from "../assets/img/obi.png";
 import tinubu from "../assets/img/tinubu.png";
+// Importing ployical parties
+import apc from "../assets/img/apc.png";
+import lp from "../assets/img/lp.png";
+import pdp from "../assets/img/pdp.png";
 
 function parsePoliticalParty (party) {
   if (party == "Labour Party") return "LP"
@@ -19,12 +24,33 @@ function getPercentage (vote, total_vote) {
 
 function fetchSenateElectionData () {
     FetchHTTPData("senate", (response) => {
-
+        if (isArray(response)) {
+            if (response.length <= 2) {
+                $("#senate").fadeOut();
+                return;
+            }
+        } else {  $("#senate").fadeOut(); $("#senate-result").fadeIn(); return}
+        alert(`This is the JSON tree to be parsed: ${JSON.stringify(response)}`);
     });
 }
 
+
+function fetchHouseElectionData () {
+    FetchHTTPData("house", (response) => {
+        if (isArray(response)) {
+            if (response.length <= 2) {
+                $("#house").fadeOut();
+                return;
+            }
+        } else {  $("#house").fadeOut(); $("#house-result").fadeIn(); return;}
+        alert(`This is the JSON tree to be parsed: ${JSON.stringify(response)}`);
+    });
+}
+
+
 function fetchPresidentialData () {  $("#presidential-loader-error-message").fadeOut();
     var senate = $("#senate-house"), region = $("#map-region"), state__ = $("#state-results"), presidential = $("#presidential");
+    fetchSenateElectionData(); fetchHouseElectionData();
     FetchHTTPData("president", (response) => { $("#presidential-loader").fadeOut(250);
         if (isArray(response)) {
             if (response.length <= 0) {

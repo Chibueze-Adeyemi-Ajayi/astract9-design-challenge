@@ -1,3 +1,4 @@
+var x___ = 0;
 var simplemaps_countrymap_mapdata={
    main_settings: {
     //General settings
@@ -128,7 +129,7 @@ var simplemaps_countrymap_mapdata={
     NGA2842: {
       name: "Akwa Ibom",
       text: "Borno",
-      description: `<div class="w-[400px] h-fit bg-[#1E2748] rounded-md">
+      description: `<div onShow="alert('hmmm')" class="w-[400px] h-fit bg-[#1E2748] rounded-md">
       <div class='w-full h-full bg-black/50 rounded-md p-3 flex flex-col space-y-4'>
           <font class='uppercase text-sm text-gray-400 flex flex-row'>
               <font class='w-full'>vote count</font><font class='w-full pr-3 text-right text-[#E5B805] uppercase'>see full list</font>
@@ -190,7 +191,7 @@ var simplemaps_countrymap_mapdata={
           <div class='w-full h-full gap-y-2 grid grid-cols-4'>
               <font class='capitalize text-sm text-gray-100 col-span-2'>bola ahmed tinubu</font>
               <font class='uppercase text-sm text-gray-100'>apc</font>
-              <font class='uppercase text-sm text-gray-100'>13,000,000</font>
+              <font class='uppercase text-sm text-gray-100'>${x___}</font>
 
               <font class='capitalize text-sm text-gray-100 col-span-2'>peter obi</font>
               <font class='uppercase text-sm text-gray-100'>lp</font>
