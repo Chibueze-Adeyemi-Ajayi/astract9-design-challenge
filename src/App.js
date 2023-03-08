@@ -12,9 +12,6 @@ import FetchHTTPData from './assets/js/http-connector';
 // this project is a frontend project from astract9 
 
 function App() {
-  FetchHTTPData("president", (response) => {
-    console.log(response);
-  });
   return (
     <div id='app' className='w-full h-fit flex flex-col bg-[#1E2748]'>
       <div className='w-full flex flex-col h-full bg-black/30'>
@@ -24,8 +21,17 @@ function App() {
                 <section className='h-10'></section>
                 {/* election data section */}
                 <ElectionData />
+
                 {/* presidential election section */}
-                <div className='hidden' id='presidential'><PresidentialElection /></div>
+
+                {/* spinner */}
+                <section id='presidential-loader' className='hidden h-56'>
+                    <div className='w-full h-full p-8 flex'><span class="loader mx-auto my-auto"></span></div>
+                </section>
+                
+                <div className='hidden' id='presidential'><br></br><br></br><br></br><br></br>
+                  <PresidentialElection />
+                </div>
                 {/* other election results */}
                 <div className='hidden' id='senate-house'><OtherElectionResults /></div>
                 <div className='flex flex-col'>

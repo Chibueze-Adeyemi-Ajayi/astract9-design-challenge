@@ -1,5 +1,9 @@
 import "flowbite"
 import $ from "jquery";
+import FetchHTTPData from "../assets/js/http-connector";
+import atiku from "../assets/img/atiku.png";
+import obi from "../assets/img/obi.png";
+import tinubu from "../assets/img/tinubu.png";
 
 const DropButton = (props) => {
     let array = [], x  = -1; 
@@ -14,10 +18,23 @@ const DropButton = (props) => {
                         scrollTop: $("#app").offset().top
                     }, 500);
                 } else if (child == "Election Day Live Update") {
-                    state__.fadeIn(700); presidential.fadeIn(700); senate.fadeIn(700); region.fadeOut(700);
-                    $('html, body').animate({
-                        scrollTop: presidential.offset().top
-                    }, 500); 
+                    $("#presidential-loader").fadeIn();presidential.fadeOut(250); senate.fadeOut(250); region.fadeOut(250); state__.fadeOut(250);
+                    FetchHTTPData("president", (response) => { 
+                        state__.fadeIn(700); presidential.fadeIn(700); senate.fadeIn(700); region.fadeOut(700);
+                        $("#presidential-loader").fadeOut(250);
+                        // parsing the data
+                        var score_1 = 0, score_2 = 0, score_3 = 0;
+                        response.forEach(result => {
+                            if (score_1 == 0) score_1 = result.candidates_vote;
+                            if (score_2 == 0) score_1 = result.candidates_vote;
+                            if (score_3 == 0) score_1 = result.candidates_vote;
+                        })
+                        setTimeout(() => {
+                            $('html, body').animate({
+                                scrollTop: presidential.offset().top
+                            }, 500);
+                        }, 500);
+                    });
                 } else {
                     presidential.fadeOut(500); senate.fadeOut(700);region.fadeIn(1500); state__.fadeOut(1200);
                     $('html, body').animate({
