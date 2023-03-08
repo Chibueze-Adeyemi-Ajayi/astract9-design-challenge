@@ -1,3 +1,3 @@
 /*
-* This code snippet enables http communi
+* This code snippet enables http communic
 */
