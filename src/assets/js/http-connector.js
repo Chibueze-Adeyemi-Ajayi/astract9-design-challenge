@@ -1,3 +1,3 @@
 /*
-* This code snippet en
+* This code snippet ena
 */
