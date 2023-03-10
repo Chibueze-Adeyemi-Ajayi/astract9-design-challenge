@@ -95,7 +95,7 @@ console.log(JSON.parse(localStorage.getItem('state-result')));
 function loadStateResults () {
     FetchHTTPData("state_result", response => jsRender(response));
 }
-// display the gen
+// display the gene
 const Map = () => { 
     useEffect(loadStateResults);
     return <>
