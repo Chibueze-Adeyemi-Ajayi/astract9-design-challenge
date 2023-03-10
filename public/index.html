@@ -119,23 +119,13 @@
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js" integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
-    setTimeout(function() {
-      $("#loader").fadeOut();
-      $("#abcd").html("APTYX")
-    }, 3000)
+    setTimeout(function() { $("#loader").fadeOut(); }, 3000)
   </script>
   <script>
     // JavaScript function for displaying state data     
    function aptyx () {
-    $("#my-result-sheet").fadeIn();
+        $("#my-result-sheet").fadeIn();
+        $("#map-region").fadeOut();
    }
-  </script>
-  <script>
-  //   simplemaps_countrymap.hooks.click_state = function(id){
-  //    alert(simplemaps_countrymap.state_specific[id].name);
-  //  }
-  //  simplemaps_countrymap.hooks.ready = () => {
-  //   simplemaps_countrymap.load();
-  //  };
   </script>
 </html>

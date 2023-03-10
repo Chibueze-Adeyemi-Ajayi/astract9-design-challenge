@@ -5,10 +5,6 @@ import FetchHTTPData from "../assets/js/http-connector";
 import atiku from "../assets/img/atiku.png";
 import obi from "../assets/img/obi.png";
 import tinubu from "../assets/img/tinubu.png";
-// Importing ployical parties
-import apc from "../assets/img/apc.png";
-import lp from "../assets/img/lp.png";
-import pdp from "../assets/img/pdp.png";
 
 function parsePoliticalParty (party) {
   if (party == "Labour Party") return "LP"
@@ -117,6 +113,7 @@ const DropButton = (props) => {
                     fetchPresidentialData();
                 } else {
                     presidential.fadeOut(500); senate.fadeOut(700);region.fadeIn(1500); state__.fadeOut(1200);
+                    $("#my-result-sheet").fadeOut();
                     $('html, body').animate({
                         scrollTop: region.offset().top
                     }, 1000);
