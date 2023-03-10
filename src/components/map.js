@@ -95,7 +95,7 @@ console.log(JSON.parse(localStorage.getItem('state-result')));
 function loadStateResults () {
     FetchHTTPData("state_result", response => jsRender(response));
 }
-// display the generated (Scal) SVG map
+// display the generated (Scala) SVG map
 const Map = () => { 
     useEffect(loadStateResults);
     return <>
