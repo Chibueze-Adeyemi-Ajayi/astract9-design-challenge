@@ -95,7 +95,7 @@ console.log(JSON.parse(localStorage.getItem('state-result')));
 function loadStateResults () {
     FetchHTTPData("state_result", response => jsRender(response));
 }
-// d
+// di
 const Map = () => { 
     useEffect(loadStateResults);
     return <>
