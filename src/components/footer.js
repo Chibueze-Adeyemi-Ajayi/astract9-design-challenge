@@ -18,8 +18,8 @@ const Footer = () => {
                 <a className="">Blog</a>
                 <a className="">About hernalytics</a>
                 <a className="">Videos</a>
-            </div>p
-            {/* sup */}
+            </div>
+            {/* supp */}
             <div className="text-gray-100 flex flex-col space-y-4">
                 <a className="font-medium">Support</a>
                 <a className="">FAQs</a>
