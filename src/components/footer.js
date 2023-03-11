@@ -26,7 +26,7 @@ const Footer = () => {
                 <a className="">Privacy Policy</a>
                 <a className="">Terms of Service</a>
             </div>
-            {/* contact s */}
+            {/* contact se */}
             <div className="text-gray-100 flex flex-col space-y-4">
                 <a className="font-medium">Let's chat!</a>
                 <a className="">hernalytics@gmail.com</a>
