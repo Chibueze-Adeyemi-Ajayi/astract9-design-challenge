@@ -1,7 +1,7 @@
 import logo from "../assets/img/logo.png";
 // application footer
 const Footer = () => {
-    // addre
+    // addres
     return <footer className="w-full h-fit p-12 bg-white/10">
         <section className="w-full h-full grid grid-cols-5 gap-8">
             <div className="w-full h-full capitalize col-span-2 flex flex-col space-y-4">
