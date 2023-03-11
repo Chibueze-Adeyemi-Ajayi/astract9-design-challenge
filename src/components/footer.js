@@ -19,7 +19,7 @@ const Footer = () => {
                 <a className="">About hernalytics</a>
                 <a className="">Videos</a>
             </div>
-            {/* support sect */}
+            {/* support secti */}
             <div className="text-gray-100 flex flex-col space-y-4">
                 <a className="font-medium">Support</a>
                 <a className="">FAQs</a>
