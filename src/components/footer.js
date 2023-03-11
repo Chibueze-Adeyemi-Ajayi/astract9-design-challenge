@@ -18,7 +18,7 @@ const Footer = () => {
                 <a className="">Blog</a>
                 <a className="">About hernalytics</a>
                 <a className="">Videos</a>
-            </div>
+            </div>p
             {/* sup */}
             <div className="text-gray-100 flex flex-col space-y-4">
                 <a className="font-medium">Support</a>
