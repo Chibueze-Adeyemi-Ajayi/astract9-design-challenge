@@ -11,7 +11,7 @@ const Footer = () => {
                     &copy; {new Date().getFullYear()} hernalytics
                 </div>
             </div>
-            {/* about se */}
+            {/* about sec */}
             <div className="text-gray-100 flex flex-col space-y-4">
                 <a className="font-medium">About</a>
                 <a className="">Our Story</a>
