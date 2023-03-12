@@ -1,6 +1,6 @@
 import { useState } from "react";
 import FetchHTTPData from "../assets/js/http-connector";
-// returning color per 
+// returning color per p
 const getBgcolor = (party) => {
     if (party == "apc") return "bg-cyan-300";
     else if (party == "lp") return "bg-[#0AA83F]";
